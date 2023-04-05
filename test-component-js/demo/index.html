@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../open-wc-test-js.js';
+
+    const header = 'Hello owc World!';
+    render(
+      html`
+        <open-wc-test-js .header=${header}>
+          some light-dom
+        </open-wc-test-js>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "open-wc-test-js",
+  "description": "Webcomponent open-wc-test-js following open-wc recommendations",
+  "license": "MIT",
+  "author": "open-wc-test-js",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "index.js",
+  "module": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./open-wc-test-js.js": "./open-wc-test-js.js"
+  },
+  "scripts": {
+    "analyze": "cem analyze --litelement",
+    "start": "web-dev-server"
+  },
+  "dependencies": {
+    "firebase": "^9.19.1",
+    "lit": "^2.0.2"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.4.17",
+    "@web/dev-server": "^0.1.34"
+  },
+  "customElements": "custom-elements.json"
+}
