@@ -16,10 +16,10 @@ This function saves data to the IndexedDB database using the this.db object. It 
 Data will be saved in the following format:
 ```json
   {
-    answer1: String,
-    answer2: String,
-    image: Object(Blob())
-    id: Number
+    "answer1": "String",
+    "answer2": "String",
+    "image": {"Object(Blob())"}
+    "id": 1
   }
 ```
 
